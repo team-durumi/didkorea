@@ -1,3 +1,19 @@
+# didkorea
+
+## 기획자료
+
+- 리뉴얼 기획자료(고객전달) : https://docs.google.com/document/d/1ce2ibp0n0ysJPiTUxg-QQUXM1KQD0NqZ6M8w1ZSHJkY/edit?usp=sharing
+
+- 제품소개 화면(고객전달) : https://docs.google.com/presentation/d/1SiSnIWVRdIWDUxGFiFcThBFahFKDUleVoqOK8xAusGw/edit?usp=sharing
+
+- https://www.did-coltd.com/english/products/index.html (did 일본 사이트에서 보여주는 RS 체인이 1개 Product 이고, 특수체인이라고 표현한 것이 다른 제품군 중에서 골라서 판매하시는 목록 / 즉 DID 제품 11종의 상품이 있다고 생각하면 됨. 이중에 RS체인은 세부 규격 내용이 많이 포함 된 것
+
+- 목록 필터를 너무 복잡하게 하지 말고 필터 기능으로 제안 (전체 / DID RS / DID 특수 / 대림 RS / 대림 특수)
+
+## 진행이슈
+
+- 서버를 관리하는 업체에서 도메인 관리까지 하고 있음. 인수인계 받아야 함. (inames) / 도메인은 고객이 직접 관리하고, 서버는 없애는 방식으로 제안.
+
 # Gatstrap
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fa249a3a-68ea-4b4b-9aa6-394c87099ee1/deploy-status)](https://app.netlify.com/sites/gatstrap/deploys)
