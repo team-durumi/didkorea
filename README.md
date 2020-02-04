@@ -10,9 +10,37 @@
 
 - 목록 필터를 너무 복잡하게 하지 말고 필터 기능으로 제안 (전체 / DID RS / DID 특수 / 대림 RS / 대림 특수)
 
+- 고객 컨펌을 위해 목업을 그려 봅니다. https://app.moqups.com/lyQN9mhCdL/view
+
 ## 진행이슈
 
 - 서버를 관리하는 업체에서 도메인 관리까지 하고 있음. 인수인계 받아야 함. (inames) / 도메인은 고객이 직접 관리하고, 서버는 없애는 방식으로 제안.
+
+- 카카오맵이 시흥유통상가까지만 잡혀서 세부 위치를 원하실 수 있음.
+
+## 카카오맵
+
+```
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1580784547243" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1580784547243",
+		"key" : "wuk7",
+		"mapWidth" : "800",
+		"mapHeight" : "400"
+	}).render();
+</script>
+```
 
 # Gatstrap
 
