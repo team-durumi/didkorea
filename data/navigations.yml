@@ -1,0 +1,11 @@
+- title: 회사소개
+  link: /about
+  children:
+    - title: 인사말씀
+      link: /about
+    - title: 찾아오시는 길
+      link: /about/location
+- title: 제품소개
+  link: /products
+- title: 주문방법
+  link: /how-to-order

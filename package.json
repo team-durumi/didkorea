@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "2.0.1",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "@team-durumi/didkorea",
+  "description": "website for didkore.co.kr",
+  "version": "0.0.1",
+  "author": "team-durumi <team-durumi@noreply.github.com>",
   "dependencies": {
     "gatsby": "2.18.25",
     "gatsby-image": "2.2.39",

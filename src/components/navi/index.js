@@ -1,44 +1,37 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-class Navi extends React.Component {
-  render() {
-    const { location, title } = this.props
-    return (
-      <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
-        <div className="container">
-          <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">{title}</h1>
-          </Link>
-          <div className="navbar-nav-scroll">
-            <ul className="navbar-nav bd-navbar-nav flex-row">
-              <li
-                className={
-                  location.pathname === '/' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li
-                className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
-                    : 'nav-item'
-                }
-              >
-                <Link to="/profile/" className="nav-link">
-                  Profile
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
+function Navi(props) {
+  const { location, title, items } = props
+  return (
+    <nav className="navbar navbar-expand flex-column flex-md-row border-bottom box-shadow">
+      <div className="container">
+        <Link className="text-center mr-md-auto" to="/">
+          <h1 className="navbar-brand mb-0">{title}</h1>
+        </Link>
+        <div className="navbar-nav-scroll">
+          <ul className="navbar-nav bd-navbar-nav flex-row">
+            {items.map((item, key) => {
+              return (
+                <li
+                  key={key}
+                  className={
+                    location.pathname === item.link
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to={item.link} className="nav-link">
+                    {item.title}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </div>
-      </nav>
-    )
-  }
+      </div>
+    </nav>
+  )
 }
 
 export default Navi

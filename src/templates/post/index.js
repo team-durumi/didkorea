@@ -25,33 +25,31 @@ const Post = ({ data, options }) => {
   const fluid = get(image, 'childImageSharp.fluid')
 
   return (
-    <div className="article" key={path}>
-      <div className="container">
-        <div className="info">
-          <Link style={{ boxShadow: 'none' }} to={path}>
-            <h1>{title}</h1>
-            <time dateTime={date}>{date}</time>
-          </Link>
-          {Badges({ items: [category], primary: true })}
-          {Badges({ items: tags })}
-        </div>
-        <div className="content">
-          <p>{description}</p>
-          {fluid ? (
-            <Img fluid={fluid} style={{ display: 'block', margin: '0 auto' }} />
-          ) : (
-            ''
-          )}
-        </div>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{
-            __html: isMore ? getDescription(html) : html,
-          }}
-        />
-        {isMore ? Button({ path, label: 'MORE', primary: true }) : ''}
-        {getAd(isIndex, adsense)}
+    <div className="article col-6 pl-0 pr-5" key={path}>
+      <div className="info">
+        <Link style={{ boxShadow: 'none' }} to={path}>
+          <h1>{title}</h1>
+          <time dateTime={date}>{date}</time>
+        </Link>
+        {Badges({ items: [category], primary: true })}
+        {Badges({ items: tags })}
       </div>
+      <div className="content">
+        <p>{description}</p>
+        {fluid ? (
+          <Img fluid={fluid} style={{ display: 'block', margin: '0 auto' }} />
+        ) : (
+          ''
+        )}
+      </div>
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{
+          __html: isMore ? getDescription(html) : html,
+        }}
+      />
+      {isMore ? Button({ path, label: 'MORE', primary: true }) : ''}
+      {getAd(isIndex, adsense)}
     </div>
   )
 }
