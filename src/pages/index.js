@@ -8,7 +8,7 @@ import Layout from 'components/layout'
 import Carousel from 'components/Carousel'
 import { slides, featuredProducts, banners } from '../../data/front.yml'
 
-const FrontIdenx = ({ data, location }) => {
+const FrontIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
@@ -38,7 +38,7 @@ const FrontIdenx = ({ data, location }) => {
   )
 }
 
-export default FrontIdenx
+export default FrontIndex
 
 const placeholderImage = index =>
   'https://via.placeholder.com/565x120?text=Slide' + index
