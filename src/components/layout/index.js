@@ -18,11 +18,11 @@ function Layout(props) {
   })
   const { children } = props
   return (
-    <div>
+    <>
       <Navi title={siteMetadata.title} items={navItems} {...props} />
       {children}
       <Footer title={siteMetadata.title} author={siteMetadata.author} />
-    </div>
+    </>
   )
 }
 
