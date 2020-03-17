@@ -12,6 +12,7 @@ const AboutIndex = ({ data, location }) => {
       <Meta site={get(data, 'site.meta')} />
       <div className="container">
         <div className="row">
+          <h1>about</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
             eum numquam, obcaecati voluptatem. Mollitia placeat natus temporibus
