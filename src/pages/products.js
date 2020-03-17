@@ -5,9 +5,10 @@ import get from 'lodash/get'
 import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
-import Tab from 'components/tab'
+import { products, series } from '../../data/product-terms.yml'
+console.log(products, series)
 
-const ProductsIndex = ({ data, location }) => {
+const ProductsIndex = ({ data, location, products, series }) => {
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
