@@ -51,72 +51,74 @@ export default function ProductContent({ series_item }) {
       <h1>{series_item}</h1>
       <h2>subtitle goes here</h2>
       <table>
-        <tr>
-          <th style={tableHeadStyle} rowspan="2">
-            Name
-          </th>
-          {product_keys.map((item, key) => {
-            return (
-              <td style={tableNameStyle}>
-                <h5 style={{ textAlign: 'center' }}>
-                  {products[item]['name']}
-                </h5>
-              </td>
-            )
-          })}
-        </tr>
-        <tr>
-          {/*<th style={tableHeadStyle}></th>*/}
-          {product_keys.map((item, key) => {
-            return (
-              <td>
-                <img src={products[item]['image']} width="100%" />
-              </td>
-            )
-          })}
-        </tr>
-        <tr>
-          <th style={tableHeadStyle}>Features</th>
-          {product_keys.map((item, key) => {
-            return (
-              <td>
-                <p>{products[item]['features']}</p>
-              </td>
-            )
-          })}
-        </tr>
-        <tr>
-          <th style={tableHeadStyle}>Functions</th>
-          {product_keys.map((item, key) => {
-            return (
-              <td>
-                <img src={products[item]['functions']} width="50%" />
-              </td>
-            )
-          })}
-        </tr>
-        <tr>
-          <th style={tableHeadStyle}>Main Uses</th>
-          {product_keys.map((item, key) => {
-            return (
-              <td>
-                <span>{products[item]['main-uses']} </span>
-              </td>
-            )
-          })}
-        </tr>
-        <tr>
-          <th style={tableHeadStyle}>PDF</th>
-          {product_keys.map((item, key) => {
-            return (
-              <td>
-                <a href={products[item]['files']} target="_blank">
-                  {products[item]['name']}
-                </a>
-              </td>
-            )
-          })}
-        </tr>
+        <tbody>
+          <tr>
+            <th style={tableHeadStyle} rowSpan="2">
+              Name
+            </th>
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key} style={tableNameStyle}>
+                  <h5 style={{ textAlign: 'center' }}>
+                    {products[item]['name']}
+                  </h5>
+                </td>
+              )
+            })}
+          </tr>
+          <tr>
+            {/*<th style={tableHeadStyle}></th>*/}
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key}>
+                  <img src={products[item]['image']} width="100%" />
+                </td>
+              )
+            })}
+          </tr>
+          <tr>
+            <th style={tableHeadStyle}>Features</th>
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key}>
+                  <p>{products[item]['features']}</p>
+                </td>
+              )
+            })}
+          </tr>
+          <tr>
+            <th style={tableHeadStyle}>Functions</th>
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key}>
+                  <img src={products[item]['functions']} width="50%" />
+                </td>
+              )
+            })}
+          </tr>
+          <tr>
+            <th style={tableHeadStyle}>Main Uses</th>
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key}>
+                  <span>{products[item]['main-uses']} </span>
+                </td>
+              )
+            })}
+          </tr>
+          <tr>
+            <th style={tableHeadStyle}>PDF</th>
+            {product_keys.map((item, key) => {
+              return (
+                <td key={key}>
+                  <a href={products[item]['files']} target="_blank">
+                    {products[item]['name']}
+                  </a>
+                </td>
+              )
+            })}
+          </tr>
+        </tbody>
       </table>
     </div>
   )
