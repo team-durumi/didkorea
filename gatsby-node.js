@@ -1,9 +1,33 @@
 const each = require('lodash/each')
+const head = require('lodash/head')
 const path = require('path')
 const PostTemplate = path.resolve('./src/templates/index.js')
+const ProductTemplate = path.resolve('./src/templates/product/index.js')
+const fs = require('fs')
+const yaml = require('js-yaml')
+const slugify = require('slugify')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+  const terms = yaml.safeLoad(
+    fs.readFileSync('./data/product-terms.yml', 'utf-8')
+  )
+  const { products, series } = terms
+
+  each(products, product => {
+    let slug = slugify(product.series, { lower: true })
+    console.log(slug)
+    createPage({
+      path: `/product/${slug}/`,
+      component: ProductTemplate,
+      context: {
+        title: product.name,
+        image: product.image,
+        product: product,
+        series: series,
+      },
+    })
+  })
 
   return new Promise((resolve, reject) => {
     resolve(

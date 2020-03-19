@@ -6,6 +6,7 @@ import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Page from 'templates/page'
+import Product from 'templates/product'
 
 const Template = ({ data, location }) => (
   <div>
