@@ -6,7 +6,7 @@ import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Tab from 'components/tab'
-import { products, series } from '../../data/product-terms.yml'
+import { series } from '../../data/product-terms.yml'
 
 const ProductsIndex = ({ data, location }) => {
   return (
