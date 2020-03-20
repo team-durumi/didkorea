@@ -14,7 +14,7 @@ const HowToOrderIndex = ({ data, location }) => {
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
       <Carousel slides={slides} />
-      <div className="container p-0">
+      <div className="container px-0 py-4">
         <div className="row no-gutters">
           <div className="col-md-6 pr-3 d-block">
             <h1>주문방법</h1>

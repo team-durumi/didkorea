@@ -13,7 +13,7 @@ const FrontIndex = ({ data, location }) => {
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
       <Carousel slides={slides} />
-      <div className="container px-0 my-3">
+      <div className="container px-0 my-4">
         <h3>취급품목</h3>
         <div className="row">
           {featuredProducts.map((product, key) => (
@@ -24,7 +24,7 @@ const FrontIndex = ({ data, location }) => {
           ))}
         </div>
       </div>
-      <div className="container px-0 my-3">
+      <div className="container px-0 my-5">
         <div className="row no-gutters">
           <div className="col-6">
             <img src={placeholderImage(1)} alt="" />
