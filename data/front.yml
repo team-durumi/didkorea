@@ -3,32 +3,39 @@ slides:
     decription: |
       연락처 | 02-895-5118
       이메일 | didkorea@didkorea.co.kr
-    image:
+    image: /static/img/slide.png
+
+# 담과 함께 홈에 노출될 항목과 제목 매칭해야 함.
+
 featuredProducts:
-  - title: '콘베어 체인'
-    image:
-  - title: 'SUS 체인'
-    image:
-  - title: 'Top 체인'
-    image:
-  - title: 'TT 체인'
-    image:
-  - title: '호로핀 체인'
-    image:
-  - title: '일본수입체인(DID, KCM )'
-    image:
-  - title: '사이드롤라 체인'
-    image:
-  - title: '아타치먼트 체인'
-    image:
-  - title: '특수 체인'
-    image:
-  - title: '대림 체인'
-    image:
+  - title: '일본수입(DID, KCM) RS체인'
+    image: /static/products/01/src-01.png
+  - title: 'HI-PWR-S 롤러체인'
+    image: /static/products/02/upc-01.jpg
+  - title: 'HI-PWR-SHK 롤러체인'
+    image: /static/products/02/upc-02.jpg
+  - title: 'HK타입 롤러체인'
+    image: /static/products/02/upc-03.jpg
+  - title: 'Fit X-RING 체인'
+    image: /static/products/03/ulc-01.jpg
+  - title: 'Sintered 비지니스 롤러체인'
+    image: /static/products/03/ulc-02.jpg
+  - title: 'X-RING체인, O-RING체인'
+    image: /static/products/03/ulc-03.jpg
+  - title: '더블가드 체인'
+    image: /static/products/04/erc-01.jpg
+  - title: '하이가드 체인'
+    image: /static/products/04/erc-02.jpg
+  - title: '저온 저항 체인'
+    image: /static/products/04/erc-03.jpg    
+  - title: '스테인리스 스틸 체인(SN)'
+    image: /static/products/01/src-05.png
+  - title: '스테인리스 스틸 체인(SN)'
+    image: /static/products/01/src-06.png
 banners:
   - title: 'D.I.D KOGYO'
-    image:
-    link:
+    image: 
+    link: https://www.did-coltd.com/english/
   - title: 'D.I.D DIGITAL CATALOG 2020'
     image:
-    link:
+    link: https://www.did-daido.co.jp/documents/ebooks/catalog/english2020/
