@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: '광명코퍼레이션',
-    description: '광명코퍼레이션',
+    title: '광명코포레이션',
+    description: '광명코포레이션',
     siteUrl: 'https://didkorea.com',
-    author: '광명코퍼레이션',
+    author: '광명코포레이션',
   },
   pathPrefix: '/',
   plugins: [
