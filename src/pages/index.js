@@ -12,13 +12,13 @@ const FrontIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
-      <Carousel data={slides} />
+      <Carousel slides={slides} />
       <div className="container px-0 my-3">
         <h3>취급품목</h3>
         <div className="row">
           {featuredProducts.map((product, key) => (
-            <div className="product col-md-3">
-              <img src={placeholderProductImage(key)} alt="product.title" />
+            <div className="product col-md-3" key={key}>
+              <img src={product.image} alt={product.title} />
               <h5>{product.title}</h5>
             </div>
           ))}

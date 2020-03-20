@@ -4,7 +4,10 @@ import { Link } from 'gatsby'
 function Navi(props) {
   const { location, title, items } = props
   return (
-    <nav className="navbar navbar-expand flex-column flex-md-row border-bottom box-shadow">
+    <nav
+      className="navbar navbar-expand flex-column flex-md-row border-bottom box-shadow"
+      style={{ height: 100 + 'px' }}
+    >
       <div className="container">
         <Link className="text-center mr-md-auto" to="/">
           <h1 className="navbar-brand mb-0">{title}</h1>

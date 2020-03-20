@@ -1,44 +1,38 @@
 import React from 'react'
 
-export default function Carousel(props) {
+export default function Carousel({ slides }) {
+  console.log(slides)
   return (
     <div
       id="carouselExampleIndicators"
       className="carousel slide"
       data-ride="carousel"
     >
-      <div className="container px-0">
+      <div className="px-0">
         <ol className="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            className="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          {slides.map((slide, i) => {
+            return (
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to={i}
+                className="active"
+                key={i}
+              ></li>
+            )
+          })}
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              className="d-block w-100"
-              src={placeholderImage(0)}
-              alt="First slide"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              className="d-block w-100"
-              src={placeholderImage(1)}
-              alt="Second slide"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              className="d-block w-100"
-              src={placeholderImage(2)}
-              alt="Third slide"
-            />
-          </div>
+          {slides.map((slide, i) => {
+            return (
+              <div className="carousel-item active" key={i}>
+                <img
+                  className="d-block w-100"
+                  src={slide.image}
+                  alt={slide.title}
+                />
+              </div>
+            )
+          })}
         </div>
         <a
           className="carousel-control-prev"
