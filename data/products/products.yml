@@ -3,6 +3,8 @@
 - name: 01 Standard Roller Chain
   series: 01 Standard Roller Chain
   features:
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   functions:
   main-uses:
   image: /products/01/src-01.png
@@ -77,30 +79,30 @@
     - 3. Up to 2 times longer wear resistance performance compared to normal O-Ring chains.
     - 4. Great cost savings can be achieved through longer life and less down time.
     - 5. British Standard X-ring Chain available (P70~75).
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/03/ulc-f-01.png
   main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/03/ulc-01.jpg
+  files: /products/03/catalog/X-Ring Chain (LX)_O-Ring Chain (LD).pdf
 - name: 'Fit X-Ring Chain(LF)'
   series: 03 Ultimate Life Chain Series
   features:
     - 1. Strength is equivalent to existing X-Ring Chain/LX.
     - 2. Attachment can be designed using the same dimensions as JIS/ANSI standard.
     - 3. Standard JIS/ANSI sprockets can be used for even multiplex.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/03/ulc-f-02.png
   main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
-- name: 'Fit X-Ring Chain(LF)'
+  image: /products/03/ulc-02.jpg
+  files: /products/03/catalog/Fit X-Ring Chain.pdf
+- name: 'Sintered Bushing Roller Chain (UR), (URN)'
   series: 03 Ultimate Life Chain Series
   features:
     - 1.Sintered bushing is incorporated.
     - 2.Ultimate Life Chain for low speed and light lord applications.
     - 3.Up to 5 times longer wear life than standard chain.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/03/ulc-f-03.png
   main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/03/ulc-03.jpg
+  files: /products/03/catalog/Sintered Bushing Roller Chain (UR_ URN).pdf
 
 # 04 Environmental Resistant Chain Series (7개)
 - name: 'Nickel Plated Chain (N)'
@@ -111,29 +113,30 @@
     - 3. Up to 2 times longer wear resistance performance compared to normal O-Ring chains.
     - 4. Great cost savings can be achieved through longer life and less down time.
     - 5. British Standard X-ring Chain available (P70~75).
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-01.png
   main-uses: TEXTILE, CONVEYOR, FOOD, CHEMICAL, PRINT, PARKING
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-01.jpg
+  files: /products/04/catalog/Nickel Plated Chain (N).pdf
 - name: 'Hi-Guard Chain (E)'
   series: 04 Environmental Resistant Chain Series
   features:
     - 1. High corrosion resistant film coating.
     - 2. Where long periods of seasonal inactivity create need for orotection against indoor or out.
     - 3. Outstanding resistance to rusting or corrosion, particularly in salt water environments.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-02.png
   main-uses: TEXTILE, CONVEYOR, PARKING, WATER TREATMENT, OUTDOOR, CONSTRUCTION
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-02.jpg
+  files: /products/04/catalog/Hi-Guard Chain (E).pdf
 - name: 'Double Guard Chain (WG)'
   series: 04 Environmental Resistant Chain Series
   features:
     - 1. Rust protection "twice as tough" as DID Hi-Guard Chain.
     - 2. Amazing performance in acidic and alkaline atmospheres.
     - 3. The tensile strength and working load is the same as ANSI standard chain and makes the downsizing possible where stainless steel chain is used.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-03.png
   main-uses: TEXTILE, CONVEYOR, PARKING, WATER TREATMENT, OUTDOOR, CONSTRUCTION, FOOD, CHEMICAL
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-03.jpg
+  files: /products/04/catalog/Double Guard Chain (WG).pdf
 - name: 'Stainless Steel Chain (SS/SSK)'
   series: 04 Environmental Resistant Chain Series
   features:
@@ -143,39 +146,39 @@
     - 4. (SSK)SUS304 (plate) + SUS631 (pin/bushing/roller).
     - 5. (SSK)wWhere chain is exposed to chemicals, water and high temperature.
     - 6. (SSK)1.5 times higher max allowable load than SS type.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-04.png
   main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-04.jpg
+  files: /products/04/catalog/Stainless Steel Chain (SS_SSK).pdf
 - name: 'SN Treatment Chain (SN)'
   series: 04 Environmental Resistant Chain Series
   features:
     - 1. Excellent wear resistance for stainless steel chain.
     - 2. Same corrosion resistance as SUS600.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-04.png
   main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-04.jpg
+  files: /products/04/catalog/SN Treatment Chain (SN).pdf
 - name: 'Stainless Steel X-Ring Chain(SSLT)'
   series: 04 Environmental Resistant Chain Series
   features:
     - 1. Up to 10 times greater wear resistance performance compared to standard stainless steel chain.
     - 2. Great cost saving can be achieved through longer life and less down time.
     - 3. The patented X-ring design provides great sealing performance at half the friction of standard O-ring.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-05.png
   main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-05.jpg
+  files: /products/04/catalog/Stainless Steel X-Ring Chain.pdf
 - name: 'Low Temperature(TK)'
   series: 04 Environmental Resistant Chain Series
   features:
     - 1. Using material suitable for low temperature and specialized grease.
     - 2. Suitable for circumstances where temperatures drop down to -40 °C.
     - 3. Excellent low temperature strength.
-  functions: /data/f-img/이미지파일명.png
+  functions: /products/04/erc-f-06.png
   main-uses: PACK, CONVEYOR, FOOD, CONSTRUCTION
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/04/erc-06.jpg
+  files: /products/04/catalog/Low-Temperature Resistant Chain (TK).pdf
 
 # 05 Specialty Chain Series (2개)
 - name: 'DID 60LB PinOverChain'
@@ -184,10 +187,10 @@
     - 1. Wide clearance.
     - 2. Spring loaded peek tip.
     - 3. Carbon Steel with polished finish(Both outer & Inner plates).
-  functions: /data/f-img/이미지파일명.png
+  functions:
   main-uses:
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/05/sc-01.jpg
+  files: /products/05/catalog/DID 60LB PinOverChain.pdf
 - name: 'DID 60LDSSP X-ring Pin Chain'
   series: 05 Specialty Chain Series
   features:
@@ -196,7 +199,7 @@
     - 3. DID’s X-Ring structure reduces friction drastically by deflecting the seal between the plates compared to conventional O-Ring by squashing.
     - 4. Heat treatment of extended pin prevents snapping and bending.
     - 5. New resin tip endures the high temperature inside oven.
-  functions: /data/f-img/이미지파일명.png
+  functions:
   main-uses:
-  image: /data/p-img/이미지파일명.png
-  files: /data/cataglog/카탈로그명.pdf
+  image: /products/05/sc-02.jpg
+  files: /products/05/catalog/DID 60LDSSP X-ring Pin Chain.pdf
