@@ -7,7 +7,7 @@ import Meta from 'components/meta'
 import Layout from 'components/layout'
 
 import Carousel from 'components/Carousel'
-import { slides } from '../../../data/front.yml'
+import { slides } from '../../data/front.yml'
 
 const AboutIndex = ({ data, location }) => {
   return (
