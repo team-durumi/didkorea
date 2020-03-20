@@ -1,0 +1,202 @@
+# 01 Standard Roller Chain (1개)
+
+- name: 01 Standard Roller Chain
+  series: 01 Standard Roller Chain
+  features:
+  functions:
+  main-uses:
+  image: /products/01/src-01.png
+  files:
+  dimensions:
+    - number: DID 25
+      files: /products/01/catalog/DID_25.pdf
+    - number: DID 35
+      files: /products/01/catalog/DID_35.pdf
+    - number: DID 40
+      files: /products/01/catalog/DID_40.pdf
+    - number: DID 41
+      files: /products/01/catalog/DID_41.pdf
+    - number: DID 50
+      files: /products/01/catalog/DID_50.pdf
+    - number: DID 60
+      files: /products/01/catalog/DID_60.pdf
+    - number: DID 80
+      files: /products/01/catalog/DID_80.pdf
+    - number: DID 100
+      files: /products/01/catalog/DID_100.pdf
+    - number: DID 120
+      files: /products/01/catalog/DID_120.pdf
+    - number: DID 140
+      files: /products/01/catalog/DID_140.pdf
+    - number: DID 160
+      files: /products/01/catalog/DID_160.pdf
+    - number: DID 180
+      files: /products/01/catalog/DID_180.pdf
+    - number: DID 200
+      files: /products/01/catalog/DID_200.pdf
+    - number: DID 240
+      files: /products/01/catalog/DID_240.pdf
+
+# 02 Ultimate Power Chain Series (3개)
+
+- name: HI-PWR-S Roller Chain
+  series: 02 Ultimate Power Chain Series
+  features:
+    - 1. Higher fatigue strength and shock strength are provided without changing dimensions from standard roller chain
+    - 2. Oval figured link-plates are provided
+  functions: /products/02/f-01.png
+  main-uses: CONSTRUCTION, ARGRICULTURE, OUTDOOR
+  image: /products/02/upc-01.jpg
+  files: /products/02/catalog/HI-PWR-S Type Roller Chains.pdf
+- name: HK Roller Chain
+  series: 02 Ultimate Power Chain Series
+  features:
+    - 1. Thickness of inner and outer plates are the same as the linkplates of the next size larger standard chain
+    - 2. Allows the selection of a chain one size smaller than would be necessary
+  functions: /products/02/f-02.png
+  main-uses: PETROLIUM, CONSTRUCTION, FORESTRY, MCHINE, ARGRICULTURE
+  image: /products/02/upc-02.jpg
+  files: /products/02/catalog/HK Type Roller Chains.pdf
+- name: HI-PWR-SHK Roller Chain
+  series: 02 Ultimate Power Chain Series
+  features:
+    - 1. Both thicker link plates and oval figured link plates are provided
+    - 2. Thus it makes it possible to have maximum tensile strength and allowable load
+  functions: /products/02/f-02.png
+  main-uses: CONSTRUCTION, EXCAVATION, MINING
+  image: /products/02/upc-03.jpg
+  files: /products/02/catalog/HI-PWR-SHK Type Roller Chains.pdf
+
+# 03 Ultimate Life Chain Series (3개)
+
+- name: 'X-Ring Chain (LX)/O-Ring Chain (LD)'
+  series: 03 Ultimate Life Chain Series
+  features:
+    - 1. DID X-Ring chain is the best value of maintenance-free chain available.
+    - 2. The patented X-Ring design has half the friction of normal O-Ring chain and provides great sealing performance. It keeps the dirt out and the grease in much better than any other O-rings.
+    - 3. Up to 2 times longer wear resistance performance compared to normal O-Ring chains.
+    - 4. Great cost savings can be achieved through longer life and less down time.
+    - 5. British Standard X-ring Chain available (P70~75).
+  functions: /data/f-img/이미지파일명.png
+  main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Fit X-Ring Chain(LF)'
+  series: 03 Ultimate Life Chain Series
+  features:
+    - 1. Strength is equivalent to existing X-Ring Chain/LX.
+    - 2. Attachment can be designed using the same dimensions as JIS/ANSI standard.
+    - 3. Standard JIS/ANSI sprockets can be used for even multiplex.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Fit X-Ring Chain(LF)'
+  series: 03 Ultimate Life Chain Series
+  features:
+    - 1.Sintered bushing is incorporated.
+    - 2.Ultimate Life Chain for low speed and light lord applications.
+    - 3.Up to 5 times longer wear life than standard chain.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+
+# 04 Environmental Resistant Chain Series (7개)
+- name: 'Nickel Plated Chain (N)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. DID X-Ring chain is the best value of maintenance-free chain available.
+    - 2. The patented X-Ring design has half the friction of normal O-Ring chain and provides great sealing performance. It keeps the dirt out and the grease in much better than any other O-rings.
+    - 3. Up to 2 times longer wear resistance performance compared to normal O-Ring chains.
+    - 4. Great cost savings can be achieved through longer life and less down time.
+    - 5. British Standard X-ring Chain available (P70~75).
+  functions: /data/f-img/이미지파일명.png
+  main-uses: TEXTILE, CONVEYOR, FOOD, CHEMICAL, PRINT, PARKING
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Hi-Guard Chain (E)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. High corrosion resistant film coating.
+    - 2. Where long periods of seasonal inactivity create need for orotection against indoor or out.
+    - 3. Outstanding resistance to rusting or corrosion, particularly in salt water environments.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: TEXTILE, CONVEYOR, PARKING, WATER TREATMENT, OUTDOOR, CONSTRUCTION
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Double Guard Chain (WG)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. Rust protection "twice as tough" as DID Hi-Guard Chain.
+    - 2. Amazing performance in acidic and alkaline atmospheres.
+    - 3. The tensile strength and working load is the same as ANSI standard chain and makes the downsizing possible where stainless steel chain is used.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: TEXTILE, CONVEYOR, PARKING, WATER TREATMENT, OUTDOOR, CONSTRUCTION, FOOD, CHEMICAL
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Stainless Steel Chain (SS/SSK)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. (SS)SUS304
+    - 2. (SS)Where chains is exposed to chemicals, water and high temperature.
+    - 3. (SS)The best resistance to corrosion and heat.
+    - 4. (SSK)SUS304 (plate) + SUS631 (pin/bushing/roller).
+    - 5. (SSK)wWhere chain is exposed to chemicals, water and high temperature.
+    - 6. (SSK)1.5 times higher max allowable load than SS type.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'SN Treatment Chain (SN)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. Excellent wear resistance for stainless steel chain.
+    - 2. Same corrosion resistance as SUS600.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Stainless Steel X-Ring Chain(SSLT)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. Up to 10 times greater wear resistance performance compared to standard stainless steel chain.
+    - 2. Great cost saving can be achieved through longer life and less down time.
+    - 3. The patented X-ring design provides great sealing performance at half the friction of standard O-ring.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'Low Temperature(TK)'
+  series: 04 Environmental Resistant Chain Series
+  features:
+    - 1. Using material suitable for low temperature and specialized grease.
+    - 2. Suitable for circumstances where temperatures drop down to -40 °C.
+    - 3. Excellent low temperature strength.
+  functions: /data/f-img/이미지파일명.png
+  main-uses: PACK, CONVEYOR, FOOD, CONSTRUCTION
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+
+# 05 Specialty Chain Series (2개)
+- name: 'DID 60LB PinOverChain'
+  series: 05 Specialty Chain Series
+  features:
+    - 1. Wide clearance.
+    - 2. Spring loaded peek tip.
+    - 3. Carbon Steel with polished finish(Both outer & Inner plates).
+  functions: /data/f-img/이미지파일명.png
+  main-uses:
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf
+- name: 'DID 60LDSSP X-ring Pin Chain'
+  series: 05 Specialty Chain Series
+  features:
+    - 1. Elimination of frequent lubrication.
+    - 2. Longest chain wear life ever.
+    - 3. DID’s X-Ring structure reduces friction drastically by deflecting the seal between the plates compared to conventional O-Ring by squashing.
+    - 4. Heat treatment of extended pin prevents snapping and bending.
+    - 5. New resin tip endures the high temperature inside oven.
+  functions: /data/f-img/이미지파일명.png
+  main-uses:
+  image: /data/p-img/이미지파일명.png
+  files: /data/cataglog/카탈로그명.pdf

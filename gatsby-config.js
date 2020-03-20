@@ -21,6 +21,14 @@ module.exports = {
         name: 'images',
       },
     },
+    'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/`,
+        name: 'yml',
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
