@@ -18,6 +18,9 @@ export default class HTML extends React.Component {
             sizes="180x180"
           />
           <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+          <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         </head>
         <body>
           <div
@@ -25,10 +28,6 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script
-            async
-            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          />
         </body>
       </html>
     )

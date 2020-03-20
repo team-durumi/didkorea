@@ -5,63 +5,43 @@ import get from 'lodash/get'
 import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
+import Carousel from 'components/Carousel'
+import { slides, featuredProducts, banners } from '../../data/front.yml'
 
-const BlogIndex = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
+const FrontIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
-      {posts.map(({ post }, i) => (
-        <Post
-          data={post}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))}
+      <Carousel slides={slides} />
+      <div className="container px-0 my-4">
+        <h3>취급품목</h3>
+        <div className="row">
+          {featuredProducts.map((product, key) => (
+            <div className="product col-md-3" key={key}>
+              <img src={product.image} alt={product.title} />
+              <h5>{product.title}</h5>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container px-0 my-5">
+        <div className="row no-gutters">
+          <div className="col-6">
+            <img src={placeholderImage(1)} alt="" />
+          </div>
+          <div className="col-6">
+            <img src={placeholderImage(2)} alt="" />
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default FrontIndex
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        adsense
-      }
-    }
-    remark: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      posts: edges {
-        post: node {
-          html
-          frontmatter {
-            layout
-            title
-            path
-            category
-            tags
-            description
-            date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+const placeholderImage = index =>
+  'https://via.placeholder.com/565x120?text=Slide' + index
+
+const placeholderProductImage = index =>
+  'https://via.placeholder.com/400x300?text=Product' + index

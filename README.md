@@ -10,13 +10,17 @@
 
 - 목록 필터를 너무 복잡하게 하지 말고 필터 기능으로 제안 (전체 / DID RS / DID 특수 / 대림 RS / 대림 특수)
 
-- 고객 컨펌을 위해 목업을 그려 봅니다. https://app.moqups.com/lyQN9mhCdL/view
+## 자료
+
+- 목업(확정) https://app.moqups.com/lyQN9mhCdL/view/page/acccd848e
+- 제품소개 자료 PDF | https://drive.google.com/drive/u/2/folders/19BZziywCnzLhUpb0Hp731ZNKwz0S3jNR
 
 ## 진행이슈
 
 - 서버를 관리하는 업체에서 도메인 관리까지 하고 있음. 인수인계 받아야 함. (inames) / 도메인은 고객이 직접 관리하고, 서버는 없애는 방식으로 제안.
 
-- 카카오맵이 시흥유통상가까지만 잡혀서 세부 위치를 원하실 수 있음.
+- 3월 초에 첫 작업 공유 / 피드백 받고
+- 3월 말까지 마무리
 
 ## 카카오맵
 

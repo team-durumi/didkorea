@@ -1,11 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
-    adsense: '',
+    title: '광명코포레이션',
+    description: '광명코포레이션',
+    siteUrl: 'https://didkorea.com',
+    author: '광명코포레이션',
   },
   pathPrefix: '/',
   plugins: [
@@ -21,6 +19,14 @@ module.exports = {
       options: {
         path: `${__dirname}/content/images/`,
         name: 'images',
+      },
+    },
+    'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/`,
+        name: 'yml',
       },
     },
     {

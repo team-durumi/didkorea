@@ -1,6 +1,11 @@
 const each = require('lodash/each')
+const head = require('lodash/head')
 const path = require('path')
 const PostTemplate = path.resolve('./src/templates/index.js')
+const ProductTermTemplate = path.resolve('./src/templates/productTerm/index.js')
+const fs = require('fs')
+const yaml = require('js-yaml')
+const slugify = require('slugify')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -58,6 +63,48 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
     )
+    graphql(`
+      query ProductsQuery {
+        allProductsYaml {
+          group(field: series) {
+            title: fieldValue
+            nodes {
+              name
+              image
+              features
+              functions
+              files
+              main_uses
+              dimensions {
+                files
+                number
+              }
+            }
+          }
+        }
+      }
+    `).then(({ errors, data }) => {
+      if (errors) {
+        console.log(errors)
+        reject(errors)
+      }
+      let terms = data.allProductsYaml.group
+      let termTitles = terms.map(term => {
+        return term.title
+      })
+      each(terms, term => {
+        let termSlug = slugify(term.title, { lower: true })
+        createPage({
+          path: `/product/${termSlug}/`,
+          component: ProductTermTemplate,
+          context: {
+            title: term.title,
+            products: term.nodes,
+            termTitles: termTitles,
+          },
+        })
+      })
+    })
   })
 }
 

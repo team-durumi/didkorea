@@ -6,6 +6,7 @@ import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Page from 'templates/page'
+import ProductTerm from 'templates/productTerm'
 
 const Template = ({ data, location }) => (
   <div>
@@ -19,7 +20,6 @@ const Template = ({ data, location }) => (
           data={get(data, 'post')}
           options={{
             isIndex: false,
-            adsense: get(data, 'site.meta.adsense'),
           }}
         />
       ) : (
@@ -37,9 +37,6 @@ export const pageQuery = graphql`
         title
         description
         url: siteUrl
-        author
-        twitter
-        adsense
       }
     }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
