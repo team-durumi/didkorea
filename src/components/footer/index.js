@@ -27,13 +27,13 @@ const footerTextStyle = {
 
 const Footer = ({ author, title, data }) => (
   <div className="footer" style={footerStyle}>
-    <div className="container px-0 py-4">
+    <div className="container px-md-0 py-4">
       <div className="row no-gutters">
-        <div className="col-6">
+        <div className="col-md-6">
           <h2 style={footerHeaderStyle}>{title}</h2>
           <h2 style={footerHeaderStyle}>{title_en}</h2>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <span className="d-inline-block" style={footerTextStyle}>
             {copyright}
           </span>

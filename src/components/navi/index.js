@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const navStyle = {
-  height: 100,
   backgroundColor: '#020980',
 }
 
@@ -14,7 +13,7 @@ function Navi(props) {
   const { location, title, items } = props
   return (
     <nav
-      className="navbar navbar-expand flex-column flex-md-row border-bottom box-shadow"
+      className="navbar navbar-expand flex-column flex-md-row border-bottom box-shadow py-lg-4"
       style={navStyle}
     >
       <div className="container">

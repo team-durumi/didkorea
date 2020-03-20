@@ -13,25 +13,40 @@ const FrontIndex = ({ data, location }) => {
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
       <Carousel slides={slides} />
-      <div className="container px-0 my-4">
+      <div className="container px-md-0 my-4">
         <h3>취급품목</h3>
         <div className="row">
           {featuredProducts.map((product, key) => (
-            <div className="product col-md-3" key={key}>
-              <img src={product.image} alt={product.title} />
+            <div className="product my-2 col-md-3" key={key}>
+              <img
+                className="border rounded"
+                src={product.image}
+                alt={product.title}
+              />
               <h5>{product.title}</h5>
             </div>
           ))}
         </div>
       </div>
-      <div className="container px-0 my-5">
+      <div className="container px-md-0 my-5">
         <div className="row no-gutters">
-          <div className="col-6">
-            <img src={placeholderImage(1)} alt="" />
-          </div>
-          <div className="col-6">
-            <img src={placeholderImage(2)} alt="" />
-          </div>
+          {banners.length > 0 &&
+            banners.map((banner, key) => {
+              let bannerImage = banner.image
+                ? banner.image
+                : placeholderImage(key)
+              return (
+                <div className="col-md-6" key={key}>
+                  <a href={banner.link} target="_blank">
+                    <img
+                      className="border rounded"
+                      src={bannerImage}
+                      alt={banner.title}
+                    />
+                  </a>
+                </div>
+              )
+            })}
         </div>
       </div>
     </Layout>

@@ -14,9 +14,9 @@ const AboutIndex = ({ data, location }) => {
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
       <Carousel slides={slides} />
-      <div className="container px-0 py-4">
+      <div className="container px-md-0 py-4">
         <div className="row no-gutters">
-          <div className="col-md-6 pr-3">
+          <div className="col-md-6 pr-md-3">
             <h1>회사 소개</h1>
             <p>저희 광명코포레이션을 찾아주셔서 감사합니다.</p>
             <p>
@@ -33,9 +33,12 @@ const AboutIndex = ({ data, location }) => {
 
             <p>대표 장 종수</p>
           </div>
-          <div className="col-md-6 pl-3">
+          <div className="col-md-6 pl-md-3">
             <h2>찾아오시는 길</h2>
-            <img src="http://didkorea.co.kr/img/map.gif" className="border" />
+            <img
+              src="http://didkorea.co.kr/img/map.gif"
+              className="border rounded"
+            />
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ const ProductTerm = props => {
   return (
     <Layout location={props.location}>
       <Meta site={meta} />
-      <div className="product detail container p-0">
+      <div className="product detail container p-md-0">
         <ProductTermNav termTitles={termTitles} />
         <div className="row no-gutters d-block">
           <h1 className="my-3 w-100 border-bottom pb-2">{title}</h1>
