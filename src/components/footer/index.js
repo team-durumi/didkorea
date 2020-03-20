@@ -10,19 +10,42 @@ import {
   contact,
 } from '../../../data/footer.yml'
 
+const footerStyle = {
+  background: '#444444',
+}
+
+const footerHeaderStyle = {
+  color: 'white',
+  fontWeight: 700,
+}
+
+const footerTextStyle = {
+  color: 'white',
+  fontWeight: 700,
+  fontSize: '.9rem',
+}
+
 const Footer = ({ author, title, data }) => (
-  <div className="footer">
-    <div className="container px-0 border-top py-3">
+  <div className="footer" style={footerStyle}>
+    <div className="container px-0 py-4">
       <div className="row no-gutters">
         <div className="col-6">
-          <h2>{title}</h2>
-          <h2>{title_en}</h2>
+          <h2 style={footerHeaderStyle}>{title}</h2>
+          <h2 style={footerHeaderStyle}>{title_en}</h2>
         </div>
         <div className="col-6">
-          <span className="d-inline-block">{copyright}</span>
-          <span className="d-inline-block">{credit}</span>
-          <span className="d-inline-block">{address}</span>
-          <span className="d-inline-block">{contact}</span>
+          <span className="d-inline-block" style={footerTextStyle}>
+            {copyright}
+          </span>
+          <span className="d-inline-block" style={footerTextStyle}>
+            {credit}
+          </span>
+          <span className="d-inline-block" style={footerTextStyle}>
+            {address}
+          </span>
+          <span className="d-inline-block" style={footerTextStyle}>
+            {contact}
+          </span>
         </div>
       </div>
     </div>
