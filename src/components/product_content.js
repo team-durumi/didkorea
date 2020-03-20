@@ -16,6 +16,10 @@ const tableNameStyle = {
   backgroundColor: 'lightgrey',
 }
 
+const featuresLiStyle = {
+  paddingBottom: 10,
+}
+
 export default function ProductContent({ series_item }) {
   var product_keys = []
   products.map((product, index) => {
@@ -81,7 +85,15 @@ export default function ProductContent({ series_item }) {
             {product_keys.map((item, key) => {
               return (
                 <td key={key}>
-                  <p>{products[item]['features']}</p>
+                  <ul>
+                    {products[item]['features'].map((item, key) => {
+                      return (
+                        <li className="list-unstyled" style={featuresLiStyle}>
+                          {item}
+                        </li>
+                      )
+                    })}
+                  </ul>
                 </td>
               )
             })}
