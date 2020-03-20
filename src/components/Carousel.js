@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Carousel({ slides }) {
-  console.log(slides)
   return (
     <div
       id="carouselExampleIndicators"
