@@ -188,10 +188,10 @@ products:
       - 1. Wide clearance.
       - 2. Spring loaded peek tip.
       - 3. Carbon Steel with polished finish(Both outer & Inner plates).
-    functions: /data/f-img/이미지파일명.png
+    functions:
     main-uses:
-    image: /data/p-img/이미지파일명.png
-    files: /data/cataglog/카탈로그명.pdf
+    image: /products/05/sc-01.jpg
+    files: /products/05/catalog/DID 60LB PinOverChain.pdf
   - name: 'DID 60LDSSP X-ring Pin Chain'
     series: 05 Specialty Chain Series
     features:
@@ -200,10 +200,10 @@ products:
       - 3. DID’s X-Ring structure reduces friction drastically by deflecting the seal between the plates compared to conventional O-Ring by squashing.
       - 4. Heat treatment of extended pin prevents snapping and bending.
       - 5. New resin tip endures the high temperature inside oven.
-    functions: /data/f-img/이미지파일명.png
+    functions:
     main-uses:
-    image: /data/p-img/이미지파일명.png
-    files: /data/cataglog/카탈로그명.pdf
+    image: /products/05/sc-02.jpg
+    files: /products/05/catalog/DID 60LDSSP X-ring Pin Chain.pdf
 
 # Product Series Tab
 
