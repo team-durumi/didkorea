@@ -80,30 +80,30 @@ products:
       - 3. Up to 2 times longer wear resistance performance compared to normal O-Ring chains.
       - 4. Great cost savings can be achieved through longer life and less down time.
       - 5. British Standard X-ring Chain available (P70~75).
-    functions: /data/f-img/이미지파일명.png
+    functions: /products/03/ulc-f-01.png
     main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-    image: /data/p-img/이미지파일명.png
-    files: /data/cataglog/카탈로그명.pdf
+    image: /products/03/ulc-01.jpg
+    files: /products/03/catalog/X-Ring Chain (LX)_O-Ring Chain (LD).pdf
   - name: 'Fit X-Ring Chain(LF)'
     series: 03 Ultimate Life Chain Series
     features:
       - 1. Strength is equivalent to existing X-Ring Chain/LX.
       - 2. Attachment can be designed using the same dimensions as JIS/ANSI standard.
       - 3. Standard JIS/ANSI sprockets can be used for even multiplex.
-    functions: /data/f-img/이미지파일명.png
+    functions: /products/03/ulc-f-02.png
     main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-    image: /data/p-img/이미지파일명.png
-    files: /data/cataglog/카탈로그명.pdf
-  - name: 'Fit X-Ring Chain(LF)'
+    image: /products/03/ulc-02.jpg
+    files: /products/03/catalog/Fit X-Ring Chain.pdf
+  - name: 'Sintered Bushing Roller Chain (UR), (URN)'
     series: 03 Ultimate Life Chain Series
     features:
       - 1.Sintered bushing is incorporated.
       - 2.Ultimate Life Chain for low speed and light lord applications.
       - 3.Up to 5 times longer wear life than standard chain.
-    functions: /data/f-img/이미지파일명.png
+    functions: /products/03/ulc-f-03.png
     main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
-    image: /data/p-img/이미지파일명.png
-    files: /data/cataglog/카탈로그명.pdf
+    image: /products/03/ulc-03.jpg
+    files: /products/03/catalog/Sintered Bushing Roller Chain (UR_ URN).pdf
 
 # 04 Environmental Resistant Chain Series (7개)
   - name: 'Nickel Plated Chain (N)'
