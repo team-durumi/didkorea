@@ -18,9 +18,12 @@ function Navi(props) {
     >
       <div className="container">
         <Link className="text-center mr-md-auto" to="/">
-          <h1 className="navbar-brand mb-0" style={navLinkStyle}>
-            {title}
-          </h1>
+          <img
+            className="navbar-brand mb-0"
+            style={navLinkStyle}
+            src="/did-logo.gif"
+            alt={title}
+          />
         </Link>
         <div className="navbar-nav-scroll">
           <ul className="navbar-nav bd-navbar-nav flex-row">
