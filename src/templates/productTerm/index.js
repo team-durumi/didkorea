@@ -57,7 +57,7 @@ const ProductTermNav = ({ termTitles }) => {
 const Product = ({ product }) => {
   let dimensions = product.dimensions
   return (
-    <div class="content">
+    <div className="content">
       <h2 className="mt-3">
         Worldwide standard chains complying with JIS and ANSI
       </h2>
