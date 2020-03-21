@@ -29,8 +29,8 @@ const HowToOrderIndex = ({ data, location }) => {
               <li>이메일 didkorea@didkorea.co.kr </li>
             </ul>
           </div>
-          <div className="col-md-6 p-md-3 d-block">
-            <h1 style={{ visibility: 'hidden' }}>주문방법</h1>
+          <div className="col-md-6 pl-md-3 d-block">
+            <h1>주문정보</h1>
             <p>
               <strong>제품 주문 시, 다음 사항을 고려하시면 좋습니다.</strong>
             </p>
@@ -40,11 +40,11 @@ const HowToOrderIndex = ({ data, location }) => {
               <li>주문 업체명 및 연락처, 주소</li>
             </ul>
           </div>
-          <p>
+          <div className="how-to-get-product-id my-3">
             <strong>
               D.I.D 제품의 품목 번호를 읽는 방법은 다음과 같습니다.
             </strong>
-          </p>
+          </div>
         </div>
       </div>
     </Layout>
