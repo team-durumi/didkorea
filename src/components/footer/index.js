@@ -7,6 +7,7 @@ import {
   copyright,
   credit,
   address,
+  address_en,
   contact,
 } from '../../../data/footer.yml'
 
@@ -42,6 +43,9 @@ const Footer = ({ author, title, data }) => (
           </span>
           <span className="d-inline-block" style={footerTextStyle}>
             {address}
+          </span>
+          <span className="d-inline-block" style={footerTextStyle}>
+            Address: {address_en}
           </span>
           <span className="d-inline-block" style={footerTextStyle}>
             {contact}
