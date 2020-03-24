@@ -35,10 +35,7 @@ const AboutIndex = ({ data, location }) => {
           </div>
           <div className="col-md-6 pl-md-3">
             <h2>찾아오시는 길</h2>
-            <img
-              src="http://didkorea.co.kr/img/map.gif"
-              className="border rounded"
-            />
+            <img src="/img/map.gif" className="border rounded" />
           </div>
         </div>
       </div>
