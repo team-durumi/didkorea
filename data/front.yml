@@ -34,8 +34,8 @@ featuredProducts:
     image: /products/01/src-01.png
 banners:
   - title: 'D.I.D KOGYO'
-    image:
+    image: /slide1.png
     link: https://www.did-coltd.com/english/
   - title: 'D.I.D DIGITAL CATALOG 2020'
-    image:
+    image: /slide2.png
     link: https://www.did-daido.co.jp/documents/ebooks/catalog/english2020/
