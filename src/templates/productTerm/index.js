@@ -28,8 +28,8 @@ const ProductTerm = props => {
       <Meta site={meta} />
       <div className="product detail container p-md-0">
         <ProductTermNav termTitles={termTitles} />
-        <div className="row no-gutters d-block">
-          <h1 className="my-3 w-100 border-bottom pb-2">{title}</h1>
+        <div className="row no-gutters d-block mt-4">
+          <h1 className="mt-3 w-100 border-bottom pb-2 mb-0">{title}</h1>
           {productComponent}
         </div>
       </div>
@@ -44,7 +44,15 @@ const ProductTermNav = ({ termTitles }) => {
       {slugs.map((slug, i) => {
         return (
           <li className="nav-item" key={i}>
-            <Link className="nav-link nav-item active" to={'/product/' + slug}>
+            <Link
+              className={
+                'nav-link nav-item ' +
+                (slug === window.location.pathname.split('/')[2]
+                  ? 'active'
+                  : '')
+              }
+              to={'/product/' + slug}
+            >
               {termTitles[i]}
             </Link>
           </li>
@@ -57,10 +65,8 @@ const ProductTermNav = ({ termTitles }) => {
 const Product = ({ product }) => {
   let dimensions = product.dimensions
   return (
-    <div className="content">
-      <h2 className="mt-3">
-        Worldwide standard chains complying with JIS and ANSI
-      </h2>
+    <div className="content" style={{ padding: 30 }}>
+      <h2>Worldwide standard chains complying with JIS and ANSI</h2>
       <img src={product.image} className="border rounded my-3" />
       <p>
         The 14 sizes of DID standard roller chains are available ranging from

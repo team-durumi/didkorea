@@ -1,7 +1,7 @@
 import React from 'react'
 
 const productPageStyle = {
-  padding: 50,
+  padding: 30,
 }
 
 const cardHeadStyle = {
@@ -32,7 +32,7 @@ export default function Products({ products }) {
                 <h5 className="card-header" style={cardHeadStyle}>
                   {product.name}
                 </h5>
-                <div style={{}}>
+                <div>
                   <img
                     className="card-img-top"
                     src={product.image}
@@ -40,24 +40,31 @@ export default function Products({ products }) {
                   />
                 </div>
                 <div className="card-body" style={{}}>
-                  <div style={{}}>
-                    <ul style={{ paddingLeft: 0 }}>
+                  <div className="mb-3" style={{}}>
+                    <h5 className="mb-1">Features</h5>
+                    <ul className="mb-0 px-0">
                       {product.features.map((item, key) => {
                         return (
-                          <li className="list-unstyled" style={featuresLiStyle}>
+                          <li
+                            className="list-unstyled pb-2"
+                            style={featuresLiStyle}
+                          >
                             {item}
                           </li>
                         )
                       })}
                     </ul>
                   </div>
-                  <div>
+                  <div className="mb-3">
+                    <h5 className="mb-1">Functions</h5>
                     <img src={product.functions} />
                   </div>
-                  <div>
-                    <span>{product['main-uses']} </span>
+                  <div className="mb-3">
+                    <h5 className="mb-1">Main Uses</h5>
+                    <span>{product.main_uses} </span>
                   </div>
-                  <div>
+                  <div className="mb-3">
+                    <h5 className="mb-1">PDF Download</h5>
                     <a
                       href={product.files}
                       target="_blank"
