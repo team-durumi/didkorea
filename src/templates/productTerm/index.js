@@ -27,7 +27,7 @@ const ProductTerm = props => {
     <Layout location={props.location}>
       <Meta site={meta} />
       <div className="product detail container p-md-0">
-        <ProductTermNav termTitles={termTitles} />
+        <ProductTermNav termTitles={termTitles} location={props.location} />
         <div className="row no-gutters d-block mt-4">
           <h1 className="mt-3 w-100 border-bottom pb-2 mb-0">{title}</h1>
           {productComponent}
@@ -37,7 +37,7 @@ const ProductTerm = props => {
   )
 }
 
-const ProductTermNav = ({ termTitles }) => {
+const ProductTermNav = ({ termTitles, location }) => {
   const slugs = termTitles.map(termTitle => slugify(termTitle, { lower: true }))
   return (
     <ul className="nav nav-tabs my-3">
@@ -47,9 +47,7 @@ const ProductTermNav = ({ termTitles }) => {
             <Link
               className={
                 'nav-link nav-item ' +
-                (slug === window.location.pathname.split('/')[2]
-                  ? 'active'
-                  : '')
+                (slug === location.pathname.split('/')[2] ? 'active' : '')
               }
               to={'/product/' + slug}
             >
