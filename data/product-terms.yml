@@ -99,9 +99,9 @@ products:
   - name: 'Sintered Bushing Roller Chain (UR), (URN)'
     series: 03 Ultimate Life Chain Series
     features:
-      - 1.Sintered bushing is incorporated.
-      - 2.Ultimate Life Chain for low speed and light lord applications.
-      - 3.Up to 5 times longer wear life than standard chain.
+      - 1. Sintered bushing is incorporated.
+      - 2. Ultimate Life Chain for low speed and light lord applications.
+      - 3. Up to 5 times longer wear life than standard chain.
     functions: /products/03/ulc-f-03.png
     main-uses: FOOD, PACK, TEXTILE, PRINT, CONVEYOR, CANNING, CONSTRUCTION, HOME APPLICATION, ARGRICULTURE
     image: /products/03/ulc-03.jpg
@@ -183,30 +183,6 @@ products:
     image: /products/04/erc-06.jpg
     files: /products/04/catalog/Low-Temperature Resistant Chain (TK).pdf
 
-# 05 Specialty Chain Series (2개)
-  - name: 'DID 60LB PinOverChain'
-    series: 05 Specialty Chain Series
-    features:
-      - 1. Wide clearance.
-      - 2. Spring loaded peek tip.
-      - 3. Carbon Steel with polished finish(Both outer & Inner plates).
-    functions:
-    main-uses:
-    image: /products/05/sc-01.jpg
-    files: /products/05/catalog/DID 60LB PinOverChain.pdf
-  - name: 'DID 60LDSSP X-ring Pin Chain'
-    series: 05 Specialty Chain Series
-    features:
-      - 1. Elimination of frequent lubrication.
-      - 2. Longest chain wear life ever.
-      - 3. DID’s X-Ring structure reduces friction drastically by deflecting the seal between the plates compared to conventional O-Ring by squashing.
-      - 4. Heat treatment of extended pin prevents snapping and bending.
-      - 5. New resin tip endures the high temperature inside oven.
-    functions:
-    main-uses:
-    image: /products/05/sc-02.jpg
-    files: /products/05/catalog/DID 60LDSSP X-ring Pin Chain.pdf
-
 # Product Series Tab
 
 series:
@@ -214,4 +190,3 @@ series:
   - 02 Ultimate Power Chain Series
   - 03 Ultimate Life Chain Series
   - 04 Environmental Resistant Chain Series
-  - 05 Specialty Chain Series

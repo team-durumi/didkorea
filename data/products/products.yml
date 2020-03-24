@@ -3,7 +3,7 @@
 - name: 01 Standard Roller Chain
   series: 01 Standard Roller Chain
   features:
-    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolorsit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   functions:
   main-uses:
@@ -179,27 +179,3 @@
   main-uses: PACK, CONVEYOR, FOOD, CONSTRUCTION
   image: /products/04/erc-06.jpg
   files: /products/04/catalog/Low-Temperature Resistant Chain (TK).pdf
-
-# 05 Specialty Chain Series (2개)
-- name: 'DID 60LB PinOverChain'
-  series: 05 Specialty Chain Series
-  features:
-    - 1. Wide clearance.
-    - 2. Spring loaded peek tip.
-    - 3. Carbon Steel with polished finish(Both outer & Inner plates).
-  functions:
-  main-uses:
-  image: /products/05/sc-01.jpg
-  files: /products/05/catalog/DID 60LB PinOverChain.pdf
-- name: 'DID 60LDSSP X-ring Pin Chain'
-  series: 05 Specialty Chain Series
-  features:
-    - 1. Elimination of frequent lubrication.
-    - 2. Longest chain wear life ever.
-    - 3. DID’s X-Ring structure reduces friction drastically by deflecting the seal between the plates compared to conventional O-Ring by squashing.
-    - 4. Heat treatment of extended pin prevents snapping and bending.
-    - 5. New resin tip endures the high temperature inside oven.
-  functions:
-  main-uses:
-  image: /products/05/sc-02.jpg
-  files: /products/05/catalog/DID 60LDSSP X-ring Pin Chain.pdf
