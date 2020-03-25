@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const navStyle = {
-  backgroundColor: '#020980',
+  backgroundColor: '#08137E',
 }
 
 const navLinkStyle = {
@@ -20,8 +20,8 @@ function Navi(props) {
         <Link className="text-center mr-md-auto" to="/">
           <img
             className="navbar-brand mb-0"
-            style={navLinkStyle}
-            src="/did-logo.gif"
+            style={{ color: 'white', width: '50%', left: 0, display: 'block' }}
+            src="/did-logo.png"
             alt={title}
           />
         </Link>
