@@ -30,13 +30,13 @@ featuredProducts:
     image: /products/03/ulc-03.jpg
     link: /product/03-ultimate-life-chain-series
   - title: 'Nickel Plated 체인'
-    image: /products/04/erc-01.jpg
+    image: /products/04/erc-01-modify.jpg
     link: /04-environmental-resistant-chain-series
   - title: '하이가드 체인'
-    image: /products/04/erc-02.jpg
+    image: /products/04/erc-02-modify.jpg
     link: /04-environmental-resistant-chain-series
   - title: '더블가드 체인'
-    image: /products/04/erc-03.jpg
+    image: /products/04/erc-03-modify.jpg
     link: /04-environmental-resistant-chain-series
   - title: '스테인리스 스틸 체인(SS/SSK)'
     image: /products/04/erc-04-modify.jpg
