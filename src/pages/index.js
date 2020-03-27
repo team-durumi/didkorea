@@ -18,11 +18,13 @@ const FrontIndex = ({ data, location }) => {
         <div className="row">
           {featuredProducts.map((product, key) => (
             <div className="product my-2 col-md-3" key={key}>
-              <img
-                className="border rounded"
-                src={product.image}
-                alt={product.title}
-              />
+              <a href={product.link} className="d-block">
+                <img
+                  className="border rounded"
+                  src={product.image}
+                  alt={product.title}
+                />
+              </a>
               <h5>{product.title}</h5>
             </div>
           ))}
