@@ -21,6 +21,10 @@ export default class HTML extends React.Component {
           <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
           <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+          <script
+            type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3da2b8d6815081e9ecb2af4f67325137"
+          ></script>
         </head>
         <body>
           <div
