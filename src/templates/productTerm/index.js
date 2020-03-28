@@ -66,22 +66,14 @@ const Product = ({ product }) => {
     <div className="content" style={{ padding: 30 }}>
       <h2>Worldwide standard chains complying with JIS and ANSI</h2>
       <img src={product.image} className="border rounded my-3" />
-      <p>
-        The 14 sizes of DID standard roller chains are available ranging from
-        DID25 to DID240 including those in conformity with ANSI (American
-        National Strandard Institute), and ISO (International Organization for
-        Standardization).
-      </p>
-      <p>
-        The chains not only meet the requirements for the minimum tensile
-        strength prescribed by ANSI and ISO, but they also provide the top class
-        quality in the world including a high fatigue strength.
-      </p>
-      <img className="border rounded my-3" src="/products/01/src-02.png" />
-      <img
-        className="border rounded my-3"
-        src="/products/01/src-dimensions.png"
-      />
+
+      {product.features.map((feature, i) => {
+        return <p key={i}>{feature}</p>
+      })}
+
+      {product.dimension_images.map((image, i) => {
+        return <img src={image} className="border rounded my-3" key={i} />
+      })}
 
       <div className="row my-5">
         <h2 className="w-100 pl-3">Catalog Download</h2>

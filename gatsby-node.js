@@ -75,6 +75,7 @@ exports.createPages = ({ graphql, actions }) => {
               functions
               files
               main_uses
+              dimension_images
               dimensions {
                 files
                 number
