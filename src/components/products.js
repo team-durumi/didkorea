@@ -23,7 +23,7 @@ export default function Products({ products }) {
   console.log(products)
   return (
     <div style={productPageStyle}>
-      <h2>subtitle goes here</h2>
+      {/*<h2>subtitle goes here</h2>*/}
       <div className="row">
         {products.map((product, key) => {
           return (
