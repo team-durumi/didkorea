@@ -154,15 +154,6 @@
   main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
   image: /products/04/erc-04.jpg
   files: /products/04/catalog/Stainless Steel Chain (SS_SSK).pdf
-- name: 'SN Treatment Chain (SN)'
-  series: 04 Environmental Resistant Chain Series
-  features:
-    - 1. Excellent wear resistance for stainless steel chain.
-    - 2. Same corrosion resistance as SUS600.
-  functions: /products/04/erc-f-04.png
-  main-uses: CONVEYOR, FOOD, CHEMICAL, WATER TREATMENT
-  image: /products/04/erc-04.jpg
-  files: /products/04/catalog/SN Treatment Chain (SN).pdf
 - name: 'Stainless Steel X-Ring Chain(SSLT)'
   series: 04 Environmental Resistant Chain Series
   features:
