@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import React from 'react'
 
@@ -12,16 +13,33 @@ import Products from 'components/products'
 
 import './style.scss'
 
+export const query = graphql`
+  query SeriesQuery {
+    allSeriesYaml {
+      nodes {
+        name
+        description
+      }
+    }
+  }
+`
+
 const ProductTerm = props => {
   // console.log(props)
   let { title, termTitles, products } = props.pageContext
   // console.log(title, termTitles, products)
   let meta = { title: title }
   let type, productComponent
+  let descriptionArray = props.data.allSeriesYaml.nodes
+
   if (products.length == 1) {
-    productComponent = <Product product={products[0]} />
+    productComponent = (
+      <Product product={products[0]} descriptionArray={descriptionArray} />
+    )
   } else {
-    productComponent = <Products products={products} />
+    productComponent = (
+      <Products products={products} descriptionArray={descriptionArray} />
+    )
   }
   return (
     <Layout location={props.location}>
@@ -60,11 +78,19 @@ const ProductTermNav = ({ termTitles, location }) => {
   )
 }
 
-const Product = ({ product }) => {
+const Product = ({ product, descriptionArray }) => {
   let dimensions = product.dimensions
+  // console.log(descriptionArray)
+  let description
+  descriptionArray.map((item, key) => {
+    if (item.name === product.name) {
+      description = item.description
+    }
+  })
+
   return (
     <div className="content" style={{ padding: 30 }}>
-      <h2>Worldwide standard chains complying with JIS and ANSI</h2>
+      <h2>{description}</h2>
       <img src={product.image} className="border rounded my-3" />
 
       {product.features.map((feature, i) => {

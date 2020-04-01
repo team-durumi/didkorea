@@ -19,11 +19,18 @@ const featuresLiStyle = {
   paddingBottom: 10,
 }
 
-export default function Products({ products }) {
+export default function Products({ products, descriptionArray }) {
   console.log(products)
+  let description
+  descriptionArray.map((item, key) => {
+    if (item.name === products[0].series) {
+      description = item.description
+    }
+  })
+
   return (
     <div style={productPageStyle}>
-      {/*<h2>subtitle goes here</h2>*/}
+      <h2>{description}</h2>
       <div className="row">
         {products.map((product, key) => {
           return (

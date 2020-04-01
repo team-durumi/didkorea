@@ -69,6 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
           group(field: series) {
             title: fieldValue
             nodes {
+              series
               name
               image
               features
