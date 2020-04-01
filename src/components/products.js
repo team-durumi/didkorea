@@ -19,22 +19,14 @@ const featuresLiStyle = {
   paddingBottom: 10,
 }
 
-export default function Products({ products, descriptionArray }) {
-  console.log(products)
-  let description
-  descriptionArray.map((item, key) => {
-    if (item.name === products[0].series) {
-      description = item.description
-    }
-  })
-
+export default function Products({ products, description }) {
   return (
     <div style={productPageStyle}>
       <h2>{description}</h2>
       <div className="row">
         {products.map((product, key) => {
           return (
-            <div className="col-md-4 my-3">
+            <div className="col-md-4 my-3" key={key}>
               <div className="card">
                 <h5 className="card-header" style={cardHeadStyle}>
                   {product.name}
@@ -46,8 +38,8 @@ export default function Products({ products, descriptionArray }) {
                     style={{ width: '100%' }}
                   />
                 </div>
-                <div className="card-body" style={{}}>
-                  <div className="mb-3" style={{}}>
+                <div className="card-body">
+                  <div className="mb-3">
                     <h5 className="mb-1">Features</h5>
                     <ul className="mb-0 px-0">
                       {product.features.map((item, key) => {
@@ -55,6 +47,7 @@ export default function Products({ products, descriptionArray }) {
                           <li
                             className="list-unstyled pb-2"
                             style={featuresLiStyle}
+                            key={key}
                           >
                             {item}
                           </li>

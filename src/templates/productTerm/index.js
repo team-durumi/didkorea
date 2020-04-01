@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import React from 'react'
 
@@ -10,35 +9,23 @@ import slugify from 'slugify'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Products from 'components/products'
+import terms from '../../../data/series/series.yml'
 
 import './style.scss'
 
-export const query = graphql`
-  query SeriesQuery {
-    allSeriesYaml {
-      nodes {
-        name
-        description
-      }
-    }
-  }
-`
-
 const ProductTerm = props => {
-  // console.log(props)
   let { title, termTitles, products } = props.pageContext
-  // console.log(title, termTitles, products)
   let meta = { title: title }
   let type, productComponent
-  let descriptionArray = props.data.allSeriesYaml.nodes
+  let currentTerm = terms.filter(term => term.name == title).shift()
 
   if (products.length == 1) {
     productComponent = (
-      <Product product={products[0]} descriptionArray={descriptionArray} />
+      <Product product={products[0]} description={currentTerm.description} />
     )
   } else {
     productComponent = (
-      <Products products={products} descriptionArray={descriptionArray} />
+      <Products products={products} description={currentTerm.description} />
     )
   }
   return (
@@ -78,16 +65,9 @@ const ProductTermNav = ({ termTitles, location }) => {
   )
 }
 
-const Product = ({ product, descriptionArray }) => {
+const Product = ({ product, description }) => {
   let dimensions = product.dimensions
   // console.log(descriptionArray)
-  let description
-  descriptionArray.map((item, key) => {
-    if (item.name === product.name) {
-      description = item.description
-    }
-  })
-
   return (
     <div className="content" style={{ padding: 30 }}>
       <h2>{description}</h2>
