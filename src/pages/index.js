@@ -1,5 +1,5 @@
-import { graphql } from 'gatsby'
-import React from 'react'
+import { navigate } from 'gatsby'
+import React, { useEffect } from 'react'
 import get from 'lodash/get'
 
 import Post from 'templates/post'
@@ -9,6 +9,9 @@ import Carousel from 'components/Carousel'
 import { slides, featuredProducts, banners } from '../../data/front.yml'
 
 const FrontIndex = ({ data, location }) => {
+  useEffect(() => {
+    navigate('/about/')
+  }, [])
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
