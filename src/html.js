@@ -25,6 +25,9 @@ export default class HTML extends React.Component {
             type="text/javascript"
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3da2b8d6815081e9ecb2af4f67325137"
           ></script>
+          <script src="//unpkg.com/linkifyjs@2.1.9/dist/linkify.min.js"></script>
+          <script src="//unpkg.com/linkifyjs@2.1.9/dist/linkify-element.min.js"></script>
+          <script src="/custom.js"></script>
         </head>
         <body>
           <div

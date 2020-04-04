@@ -47,7 +47,7 @@ const Footer = ({ author, title, data }) => (
           <span className="d-inline-block" style={footerTextStyle}>
             Address: {address_en}
           </span>
-          <span className="d-inline-block" style={footerTextStyle}>
+          <span className="d-inline-block linkify" style={footerTextStyle}>
             {contact}
           </span>
         </div>
