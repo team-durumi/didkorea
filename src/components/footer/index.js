@@ -8,7 +8,9 @@ import {
   credit,
   address,
   address_en,
-  contact,
+  phone,
+  fax,
+  email,
 } from '../../../data/footer.yml'
 
 const footerStyle = {
@@ -48,7 +50,14 @@ const Footer = ({ author, title, data }) => (
             Address: {address_en}
           </span>
           <span className="d-inline-block linkify" style={footerTextStyle}>
-            {contact}
+            전화:
+            <a href={'tel:' + phone} style={footerTextStyle}>
+              {' ' + phone + ' '}
+            </a>
+            | 팩스: {fax} | 이메일:
+            <a href={'mailto:' + email} style={footerTextStyle}>
+              {' ' + email}
+            </a>
           </span>
         </div>
       </div>
