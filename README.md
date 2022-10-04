@@ -24,8 +24,14 @@
 - 3월 초에 첫 작업 공유 / 피드백 받고
 - 3월 말까지 마무리
 
-### Based on [Gatstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
+## Based on [Gatstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fa249a3a-68ea-4b4b-9aa6-394c87099ee1/deploy-status)](https://app.netlify.com/sites/gatstrap/deploys)
 [![CircleCI](https://circleci.com/gh/jaxx2104/gatsby-starter-bootstrap.svg?style=svg)](https://circleci.com/gh/jaxx2104/gatsby-starter-bootstrap)
 [![dependency Status](https://img.shields.io/david/jaxx2104/gatsby-starter-bootstrap.svg?style=flat-square)](https://david-dm.org/jaxx2104/gatsby-starter-bootstrap#info=dependencies)
+
+## fix yarn build error
+
+```
+$ env CXXFLAGS="-std=c++17" yarn
+```
