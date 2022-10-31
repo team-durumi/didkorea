@@ -1,5 +1,4 @@
 import React from 'react'
-// import { products } from '../../data/product-terms.yml'
 import { graphql } from 'gatsby'
 import ProductContent from 'components/product_content'
 

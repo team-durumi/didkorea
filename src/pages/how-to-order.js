@@ -1,11 +1,8 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import get from 'lodash/get'
-
-import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
-
 import Carousel from 'components/Carousel'
 import { slides } from '../../data/front.yml'
 

@@ -1,8 +1,6 @@
-import { navigate } from 'gatsby'
+import { graphql } from 'gatsby'
 import React from 'react'
 import get from 'lodash/get'
-
-import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Carousel from 'components/Carousel'
@@ -38,7 +36,7 @@ const FrontIndex = ({ data, location }) => {
                 ? banner.image
                 : placeholderImage(key)
               return (
-                <div className="col-md-6" key={key}>
+                <div className="col-md-4" key={key}>
                   <a href={banner.link} target="_blank">
                     <img
                       className="border rounded"
