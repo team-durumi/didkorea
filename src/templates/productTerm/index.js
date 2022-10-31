@@ -1,7 +1,5 @@
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
 import React from 'react'
-
 import get from 'lodash/get'
 import map from 'lodash/map'
 import slugify from 'slugify'

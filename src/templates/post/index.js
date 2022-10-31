@@ -1,12 +1,9 @@
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import Img from 'gatsby-plugin-image'
 import React from 'react'
-
 import get from 'lodash/get'
 import map from 'lodash/map'
-
 import Adsense from 'components/adsense'
-
 import './style.scss'
 
 const Post = ({ data, options }) => {

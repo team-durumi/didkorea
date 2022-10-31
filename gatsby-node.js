@@ -21,13 +21,6 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   name: sourceInstanceName
                   path: absolutePath
-                  remark: childMarkdownRemark {
-                    id
-                    frontmatter {
-                      layout
-                      path
-                    }
-                  }
                 }
               }
             }

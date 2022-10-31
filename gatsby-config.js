@@ -10,13 +10,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/posts/`,
-        name: 'posts',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         path: `${__dirname}/content/images/`,
         name: 'images',
       },
@@ -59,7 +52,6 @@ module.exports = {
         name: 'Gatstrap',
         short_name: 'Gatstrap',
         description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
@@ -78,6 +70,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-netlify',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
