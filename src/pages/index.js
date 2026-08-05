@@ -1,18 +1,16 @@
-import { graphql } from 'gatsby'
 import React from 'react'
-import get from 'lodash/get'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Carousel from 'components/Carousel'
 import { slides, featuredProducts, banners } from '../../data/front.yml'
 
-const FrontIndex = ({ data, location }) => {
+const FrontIndex = ({ location }) => {
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
+      <Meta path={location.pathname} />
       <Carousel slides={slides} />
-      <div className="container px-md-0 my-4">
-        <h3>제품소개</h3>
+      <div className="container px-md-0 my-4 home-products">
+        <h3 className="home-products__title">제품소개</h3>
         <div className="row">
           {featuredProducts.map((product, key) => (
             <div className="product my-2 col-md-3" key={key}>
@@ -31,22 +29,21 @@ const FrontIndex = ({ data, location }) => {
       <div className="container px-md-0 my-5">
         <div className="row no-gutters">
           {banners.length > 0 &&
-            banners.map((banner, key) => {
-              let bannerImage = banner.image
-                ? banner.image
-                : placeholderImage(key)
-              return (
-                <div className="col-md-4" key={key}>
-                  <a href={banner.link} target="_blank">
-                    <img
-                      className="border rounded"
-                      src={bannerImage}
-                      alt={banner.title}
-                    />
-                  </a>
-                </div>
-              )
-            })}
+            banners.map((banner, key) => (
+              <div className="col-md-4" key={key}>
+                <a
+                  href={banner.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="border rounded"
+                    src={banner.image}
+                    alt={banner.title}
+                  />
+                </a>
+              </div>
+            ))}
         </div>
       </div>
     </Layout>
@@ -54,9 +51,3 @@ const FrontIndex = ({ data, location }) => {
 }
 
 export default FrontIndex
-
-const placeholderImage = index =>
-  'https://via.placeholder.com/565x120?text=Slide' + index
-
-const placeholderProductImage = index =>
-  'https://via.placeholder.com/400x300?text=Product' + index

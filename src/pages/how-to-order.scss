@@ -1,0 +1,133 @@
+@import 'scss/colors.scss';
+
+.how-to-order {
+  padding-bottom: 2.5rem;
+
+  @media (max-width: 575.98px) {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  &__title {
+    color: $brand-navy;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 48px;
+      height: 3px;
+      background: $brand-red;
+    }
+  }
+
+  &__lead {
+    color: $gray-700;
+    font-size: 0.98rem;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+    word-break: keep-all;
+
+    @media (min-width: 768px) {
+      font-size: 1.05rem;
+    }
+  }
+
+  &__section {
+    background: $gray-100;
+    border: 1px solid $gray-200;
+    border-left: 4px solid $brand-red;
+    border-radius: 4px;
+    padding: 1.1rem 1.1rem;
+    margin-bottom: 1.25rem;
+
+    @media (min-width: 768px) {
+      padding: 1.35rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__section-title {
+    color: $brand-navy;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0.75rem 0 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba($brand-navy, 0.08);
+    font-size: 1rem;
+    color: $gray-800;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__icon {
+    color: $brand-red;
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+    width: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &__contact {
+    font-weight: 600;
+    color: $brand-navy;
+
+    a {
+      color: $brand-navy;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: $brand-red;
+        border-bottom-color: $brand-red;
+      }
+    }
+  }
+
+  &__guide {
+    margin-top: 0.5rem;
+    padding-top: 0.25rem;
+
+    h3 {
+      color: $brand-navy;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid $gray-200;
+      border-radius: 4px;
+      background: #fff;
+      padding: 0.75rem;
+      margin-bottom: 0;
+    }
+  }
+}

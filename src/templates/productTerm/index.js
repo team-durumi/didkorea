@@ -1,7 +1,5 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import get from 'lodash/get'
-import map from 'lodash/map'
 import slugify from 'slugify'
 
 import Meta from 'components/meta'
@@ -13,22 +11,22 @@ import './style.scss'
 
 const ProductTerm = props => {
   let { title, termTitles, products } = props.pageContext
-  let meta = { title: title }
-  let type, productComponent
+  let productComponent
   let currentTerm = terms.filter(term => term.name == title).shift()
+  let description = currentTerm ? currentTerm.description : ''
 
   if (products.length == 1) {
     productComponent = (
-      <Product product={products[0]} description={currentTerm.description} />
+      <Product product={products[0]} description={description} />
     )
   } else {
     productComponent = (
-      <Products products={products} description={currentTerm.description} />
+      <Products products={products} description={description} />
     )
   }
   return (
     <Layout location={props.location}>
-      <Meta site={meta} />
+      <Meta title={title} path={props.location.pathname} />
       <div className="product detail container p-md-0">
         <ProductTermNav termTitles={termTitles} location={props.location} />
         <div className="row no-gutters d-block mt-4">
@@ -64,37 +62,50 @@ const ProductTermNav = ({ termTitles, location }) => {
 }
 
 const Product = ({ product, description }) => {
-  let dimensions = product.dimensions
-  // console.log(descriptionArray)
+  let dimensions = product.dimensions || []
   return (
-    <div className="content" style={{ padding: 30 }}>
-      <h2>{description}</h2>
-      <img src={product.image} className="border rounded my-3" />
+    <div className="product-single">
+      {description ? <h2>{description}</h2> : null}
+      <img
+        src={product.image}
+        className="border rounded my-3"
+        alt={product.name || ''}
+      />
 
       {product.features.map((feature, i) => {
         return <p key={i}>{feature}</p>
       })}
 
-      {product.dimension_images.map((image, i) => {
-        return <img src={image} className="border rounded my-3" key={i} />
+      {(product.dimension_images || []).map((image, i) => {
+        return (
+          <img
+            src={image}
+            className="border rounded my-3"
+            key={i}
+            alt={`${product.name || ''} 치수 ${i + 1}`}
+          />
+        )
       })}
 
       <div className="row my-5">
-        <h2 className="w-100 pl-3">Catalog Download</h2>
+        <h2 className="w-100 product-single__catalog-title">
+          Catalog Download
+        </h2>
         {dimensions.length > 0 &&
           dimensions.map((dimension, i) => {
-            // console.log(dimension, i)
             return (
               <div className="col-sm-3 my-2" key={i}>
                 <div className="card">
-                  <div className="card-body">
+                  <div className="card-body d-flex align-items-center justify-content-between">
+                    <h5 className="card-title mb-0">{dimension.number}</h5>
                     <a
                       href={dimension.files}
-                      className="btn btn-primary float-right"
+                      className="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       spec
                     </a>
-                    <h5 className="card-title">{dimension.number}</h5>
                   </div>
                 </div>
               </div>

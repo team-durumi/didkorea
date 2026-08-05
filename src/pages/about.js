@@ -1,17 +1,14 @@
-import { graphql } from 'gatsby'
 import React from 'react'
-import get from 'lodash/get'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 import Carousel from 'components/Carousel'
 import { slides } from '../../data/front.yml'
-
 import Map from 'components/map'
 
-const AboutIndex = ({ data, location }) => {
+const AboutIndex = ({ location }) => {
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
+      <Meta title="회사소개" path={location.pathname} />
       <Carousel slides={slides} />
       <div className="container px-md-0 py-4">
         <div className="row no-gutters">

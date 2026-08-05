@@ -3,7 +3,7 @@ import React from 'react'
 export default class HTML extends React.Component {
   render() {
     return (
-      <html lang="en">
+      <html lang="ko">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +18,7 @@ export default class HTML extends React.Component {
             sizes="180x180"
           />
           <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+          <link href="/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
           <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
           <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

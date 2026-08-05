@@ -74,6 +74,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: $brand-navy;
+
+  &:hover {
+    color: $brand-red;
+  }
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -85,6 +93,38 @@ img {
   max-width: 100%;
 }
 
-img:hover {
-  animation: pulse 0.5s;
+// Home featured products
+.home-products {
+  &__title {
+    color: $brand-navy;
+    font-size: 1.35rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.65rem;
+    margin-bottom: 1.25rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 3px;
+      background: $brand-red;
+    }
+  }
+
+  .product {
+    h5 {
+      color: $brand-navy;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      line-height: 1.4;
+    }
+
+    a:hover img {
+      border-color: $brand-red !important;
+    }
+  }
 }

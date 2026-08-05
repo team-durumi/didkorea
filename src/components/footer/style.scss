@@ -1,9 +1,73 @@
 @import 'scss/colors.scss';
 
 .footer {
-  hr {
-    border-color: $red;
-    border-width: 3px;
-    max-width: 50px;
+  background: #0b1426;
+  color: rgba(255, 255, 255, 0.78);
+  border-top: 3px solid #e60000;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      color: #e60000;
+    }
+  }
+
+  &__inner {
+    padding-top: 2rem;
+    padding-bottom: 1.75rem;
+  }
+
+  &__brand {
+    margin-bottom: 1.5rem;
+  }
+
+  &__logo {
+    display: block;
+    width: 140px;
+    height: auto;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      width: 160px;
+    }
+  }
+
+  &__meta {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+
+    @media (min-width: 768px) {
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+  }
+
+  &__line {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  &__label {
+    color: rgba(255, 255, 255, 0.45);
+    margin-right: 0.35rem;
+  }
+
+  &__sep {
+    margin: 0 0.4rem;
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  &__copy {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
   }
 }

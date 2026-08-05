@@ -1,6 +1,6 @@
 {
   "name": "@team-durumi/didkorea",
-  "description": "website for didkore.co.kr",
+  "description": "website for didkorea.co.kr",
   "version": "0.1",
   "author": "team-durumi <team-durumi@noreply.github.com>",
   "dependencies": {
@@ -28,6 +28,9 @@
     "gatsby-transformer-remark": "^5.24",
     "gatsby-transformer-sharp": "^4.24",
     "gatsby-transformer-yaml": "^4.24",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "5.2.1",
     "slugify": "^1.4.0"
   },
   "devDependencies": {
@@ -53,9 +56,6 @@
     "modern-normalize": "0.6.0",
     "prettier": "1.19.1",
     "prismjs": "1.21.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-helmet": "5.2.1",
     "sass": "^1.55.0",
     "textlint": "11.6.1",
     "textlint-rule-preset-ja-spacing": "2.0.1",
@@ -63,8 +63,8 @@
   },
   "keywords": [
     "gatsby",
-    "gatstrap",
-    "starter"
+    "didkorea",
+    "kwangmyung"
   ],
   "license": "MIT",
   "lint-staged": {

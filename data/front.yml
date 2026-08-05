@@ -3,7 +3,7 @@ slides:
     decription: |
       연락처 | 02-895-5118
       이메일 | didkorea@didkorea.co.kr
-    image: /img/slide.png
+    image: /img/banner-hero-2026.png
 
 # 담과 함께 홈에 노출될 항목과 제목 매칭해야 함.
 
@@ -51,12 +51,12 @@ featuredProducts:
     image: /products/04/erc-06.jpg
     link: /product/04-environmental-resistant-chain-series
 banners:
-  - title: 'D.I.D KOGYO'
-    image: /slide1.png
+  - title: 'D.I.D Official Website'
+    image: /img/banner-official-2026.png
     link: https://www.did-coltd.com/english/
-  - title: 'D.I.D DIGITAL CATALOG 2020'
-    image: /slide2.png
+  - title: 'D.I.D General Catalog'
+    image: /img/banner-catalog-2026.png
     link: https://www.did-daido.co.jp/documents/ebooks/catalog/english2020/
-  - title: 'D.I.D CO.LTD.'
-    image: /img/slide3.png
+  - title: 'DAIDO KOGYO'
+    image: /img/banner-daido-2026.png
     link: https://www.did-coltd.com/
