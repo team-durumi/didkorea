@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: '광명코포레이션',
-    description: '광명코포레이션',
+    description:
+      '광명코포레이션 — 일본 D.I.D 체인 국내 공급. 롤러체인 및 동력전달 제품.',
     siteUrl: 'https://didkorea.co.kr',
     author: '광명코포레이션',
   },
@@ -49,12 +50,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
+        name: '광명코포레이션',
+        short_name: '광명코포레이션',
+        description:
+          '광명코포레이션 — 일본 D.I.D 체인 국내 공급. 롤러체인 및 동력전달 제품.',
         start_url: '/',
-        background_color: '#fff',
-        theme_color: '#673ab7',
+        background_color: '#ffffff',
+        theme_color: '#0B1426',
         display: 'standalone',
         icons: [
           {
@@ -81,10 +83,4 @@ module.exports = {
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp',
   ],
-}
-
-if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
-  window.navigator.serviceWorker.getRegistrations().then(registrations => {
-    registrations.forEach(r => r.unregister())
-  })
 }

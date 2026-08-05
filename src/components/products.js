@@ -1,76 +1,55 @@
 import React from 'react'
 
-const productPageStyle = {
-  padding: 30,
-}
-
-const cardHeadStyle = {
-  backgroundColor: '#CACBCA',
-  color: 'white',
-  textAlign: 'center',
-  // height: '5rem'
-}
-
-const tableNameStyle = {
-  backgroundColor: '#CACBCA',
-}
-
-const featuresLiStyle = {
-  paddingBottom: 10,
-}
-
 export default function Products({ products, description }) {
   return (
-    <div style={productPageStyle}>
-      <h2>{description}</h2>
+    <div className="product-series">
+      {description ? <h2 className="product-series__lead">{description}</h2> : null}
       <div className="row">
         {products.map((product, key) => {
           return (
             <div className="col-md-4 my-3" key={key}>
-              <div className="card">
-                <h5 className="card-header" style={cardHeadStyle}>
+              <div className="card product-card">
+                <h5 className="card-header product-card__header">
                   {product.name}
                 </h5>
                 <div>
                   <img
-                    className="card-img-top"
+                    className="card-img-top product-card__image"
                     src={product.image}
-                    style={{ width: '100%' }}
+                    alt={product.name || ''}
                   />
                 </div>
-                <div className="card-body">
-                  <div className="mb-3">
-                    <h5 className="mb-1">Features</h5>
-                    <ul className="mb-0 px-0">
-                      {product.features.map((item, key) => {
-                        return (
-                          <li
-                            className="list-unstyled pb-2"
-                            style={featuresLiStyle}
-                            key={key}
-                          >
-                            {item}
-                          </li>
-                        )
-                      })}
+                <div className="card-body product-card__body">
+                  <div className="product-card__section">
+                    <h5 className="product-card__label">Features</h5>
+                    <ul className="product-card__features">
+                      {product.features.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
                     </ul>
                   </div>
-                  <div className="mb-3">
-                    <h5 className="mb-1">Functions</h5>
-                    <img src={product.functions} />
+                  <div className="product-card__section">
+                    <h5 className="product-card__label">Functions</h5>
+                    {product.functions ? (
+                      <img
+                        src={product.functions}
+                        alt={`${product.name} functions`}
+                      />
+                    ) : null}
                   </div>
-                  <div className="mb-3">
-                    <h5 className="mb-1">Main Uses</h5>
+                  <div className="product-card__section">
+                    <h5 className="product-card__label">Main Uses</h5>
                     <span>{product.main_uses} </span>
                   </div>
-                  <div className="mb-3">
-                    <h5 className="mb-1">PDF Download</h5>
+                  <div className="product-card__section">
+                    <h5 className="product-card__label">PDF Download</h5>
                     <a
                       href={product.files}
                       target="_blank"
-                      style={{ fontWeight: 'bold' }}
+                      rel="noopener noreferrer"
+                      className="product-card__download"
                     >
-                      <i className="fa fa-download mr-2" />
+                      <i className="fa fa-download" />
                       <span>{product.name}</span>
                     </a>
                   </div>

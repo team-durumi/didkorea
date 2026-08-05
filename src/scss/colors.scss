@@ -10,11 +10,15 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$blue: #03a9f4 !default;
+// Brand (광명 + D.I.D)
+$brand-navy: #0b1426 !default;
+$brand-red: #e60000 !default; // D.I.D RED
+
+$blue: $brand-navy !default;
 $indigo: #3f51b5 !default;
 $purple: #673ab7 !default;
 $pink: #e91e63 !default;
-$red: #f44336 !default;
+$red: $brand-red !default;
 $orange: #ff5722 !default;
 $yellow: #ffab00 !default;
 $green: #8bc34a !default;

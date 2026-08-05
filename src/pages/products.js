@@ -1,18 +1,18 @@
-import { graphql } from 'gatsby'
-import React from 'react'
-import get from 'lodash/get'
+import React, { useEffect } from 'react'
+import { navigate } from 'gatsby'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
-import Tab from 'components/tab'
-import { series } from '../../data/product-terms.yml'
 
-const ProductsIndex = ({ data, location }) => {
+const ProductsIndex = ({ location }) => {
+  useEffect(() => {
+    navigate('/product/01-standard-roller-chain/', { replace: true })
+  }, [])
+
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
-      <div className="container">
-        <Tab series={series} />
-        <br />
+      <Meta title="제품소개" path={location.pathname} />
+      <div className="container py-5">
+        <p>제품소개 페이지로 이동 중…</p>
       </div>
     </Layout>
   )

@@ -1,0 +1,102 @@
+@import 'scss/colors.scss';
+
+@keyframes site-nav-drop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.85;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-nav {
+  position: relative;
+  z-index: 1030;
+  background: $brand-navy;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+
+  &.is-pinned {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: site-nav-drop 0.32s ease;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+  }
+
+  .container {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .navbar {
+    align-items: center;
+    min-height: 56px;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    img {
+      display: block;
+      width: 132px;
+      height: auto;
+      margin: 0 !important; // override global img { margin-bottom: 15px }
+
+      @media (min-width: 992px) {
+        width: 150px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 0.35rem 0.55rem;
+    border-radius: 3px;
+    margin: 0;
+    align-self: center;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: $brand-red;
+    }
+
+    .fa {
+      color: #fff;
+      font-size: 1.15rem;
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.92) !important;
+      font-weight: 500;
+      line-height: 1.2;
+      padding: 0.65rem 0.35rem !important;
+
+      @media (min-width: 992px) {
+        padding: 0.55rem 0.85rem !important;
+      }
+
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .nav-item.active .nav-link {
+    color: #fff !important;
+    font-weight: 700;
+  }
+}

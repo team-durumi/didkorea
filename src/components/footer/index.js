@@ -1,9 +1,7 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import './style.scss'
 import {
-  title,
-  title_en,
+  title as companyName,
   copyright,
   credit,
   address,
@@ -13,56 +11,39 @@ import {
   email,
 } from '../../../data/footer.yml'
 
-const footerStyle = {
-  background: '#444444',
-}
-
-const footerHeaderStyle = {
-  color: 'white',
-  fontWeight: 700,
-}
-
-const footerTextStyle = {
-  color: 'white',
-  fontWeight: 700,
-  fontSize: '.9rem',
-}
-
-const Footer = ({ author, title, data }) => (
-  <div className="footer" style={footerStyle}>
-    <div className="container px-md-0 py-4">
-      <div className="row no-gutters">
-        <div className="col-md-6">
-          <h2 style={footerHeaderStyle}>{title}</h2>
-          <h2 style={footerHeaderStyle}>{title_en}</h2>
+const Footer = () => (
+  <footer className="footer">
+    <div className="container px-md-0 footer__inner">
+      <div className="row">
+        <div className="col-md-4 footer__brand">
+          <img
+            className="footer__logo"
+            src="/did-logo.png"
+            alt={companyName}
+          />
         </div>
-        <div className="col-md-6">
-          <span className="d-inline-block" style={footerTextStyle}>
-            {copyright}
+        <div className="col-md-8 footer__meta">
+          <span className="footer__line">{credit}</span>
+          <span className="footer__line">{address}</span>
+          <span className="footer__line">
+            <span className="footer__label">Address</span>
+            {address_en}
           </span>
-          <span className="d-inline-block" style={footerTextStyle}>
-            {credit}
+          <span className="footer__line linkify">
+            <span className="footer__label">전화</span>
+            <a href={'tel:' + phone}>{phone}</a>
+            <span className="footer__sep">|</span>
+            <span className="footer__label">팩스</span>
+            {fax}
+            <span className="footer__sep">|</span>
+            <span className="footer__label">이메일</span>
+            <a href={'mailto:' + email}>{email}</a>
           </span>
-          <span className="d-inline-block" style={footerTextStyle}>
-            {address}
-          </span>
-          <span className="d-inline-block" style={footerTextStyle}>
-            Address: {address_en}
-          </span>
-          <span className="d-inline-block linkify" style={footerTextStyle}>
-            전화:
-            <a href={'tel:' + phone} style={footerTextStyle}>
-              {' ' + phone + ' '}
-            </a>
-            | 팩스: {fax} | 이메일:
-            <a href={'mailto:' + email} style={footerTextStyle}>
-              {' ' + email}
-            </a>
-          </span>
+          <div className="footer__copy">{copyright}</div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 )
 
 export default Footer
