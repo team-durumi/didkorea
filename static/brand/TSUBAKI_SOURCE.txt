@@ -1,0 +1,10 @@
+# Brand assets — Tsubaki
+
+Source (official website, 2026-08-18):
+- tsubaki-logo.svg ← https://tsubakimoto.com/fileadmin/templates2020/images/common/logo.svg
+- tsubaki-logo-mark.svg ← https://tsubakimoto.com/fileadmin/templates2020/en/images/company/tsubaki-spirit/logo_tsubaki.svg
+- tsubaki-logo-footer.png ← https://tsubakimoto.com/fileadmin/templates2020/images/common/logo_footer.png
+
+Trademark: Tsubakimoto Chain Co.
+Usage on didkorea: affiliation / group notice only (not site identity).
+Prefer replacing with officially delivered partner kit if Daido/Tsubaki provides one later.

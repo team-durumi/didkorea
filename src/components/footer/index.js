@@ -39,6 +39,23 @@ const Footer = () => (
             <span className="footer__label">이메일</span>
             <a href={'mailto:' + email}>{email}</a>
           </span>
+          <div className="footer__affiliation">
+            <span className="footer__affiliation-label">
+              D.I.D manufacturer is a member of
+            </span>
+            <a
+              className="footer__affiliation-link"
+              href="https://tsubakimoto.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="footer__tsubaki"
+                src="/brand/tsubaki-logo-footer.png"
+                alt="Tsubaki"
+              />
+            </a>
+          </div>
           <div className="footer__copy">{copyright}</div>
         </div>
       </div>
